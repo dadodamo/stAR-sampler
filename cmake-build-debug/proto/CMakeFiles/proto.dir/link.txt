@@ -1,0 +1,2 @@
+/Library/Developer/CommandLineTools/usr/bin/ar qc libproto.a CMakeFiles/proto.dir/ydata.pb.cc.o CMakeFiles/proto.dir/xdata.pb.cc.o CMakeFiles/proto.dir/paramdata.pb.cc.o CMakeFiles/proto.dir/parsedata.pb.cc.o CMakeFiles/proto.dir/__/protocpp/serialize.cpp.o
+/Library/Developer/CommandLineTools/usr/bin/ranlib libproto.a
