@@ -1,6 +1,6 @@
-/Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/cmake-build-debug/CMakeFiles/ar_gibbs.dir
-/Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/cmake-build-debug/proto/CMakeFiles/proto.dir
-/Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/cmake-build-debug/proto/CMakeFiles/edit_cache.dir
-/Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/cmake-build-debug/proto/CMakeFiles/rebuild_cache.dir
+/Users/daniel/Desktop/stAR-sampler/cmake-build-debug/CMakeFiles/ar_gibbs.dir
+/Users/daniel/Desktop/stAR-sampler/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/daniel/Desktop/stAR-sampler/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/daniel/Desktop/stAR-sampler/cmake-build-debug/proto/CMakeFiles/proto.dir
+/Users/daniel/Desktop/stAR-sampler/cmake-build-debug/proto/CMakeFiles/edit_cache.dir
+/Users/daniel/Desktop/stAR-sampler/cmake-build-debug/proto/CMakeFiles/rebuild_cache.dir

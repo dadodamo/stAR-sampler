@@ -53,8 +53,8 @@ private:
     std::pair<double, double> ab_w_prior = {2,4};
     std::pair<double, double> ab_0_prior = {2,4};
     // phi prior and candidate variance
-    std::pair<double, double> ab_phi_prior = {2,  4};
-    double phi_cand_var = 0.1;
+    std::pair<double, double> ab_phi_prior = {2,  1};
+    double phi_cand_var = 1;
 
     // matrices
     Eigen::MatrixXd coord_mat;
@@ -67,14 +67,14 @@ private:
     u_int64_t seed = 1;
     std::mt19937 generator = std::mt19937(1);
 
-    Eigen::VectorXd std_mean_y;
-    double std_var_y;
-    std::vector<Eigen::VectorXd> std_mean_X;
-    std::vector<double> std_var_X;
-    double std_mean_coord;
-    double std_var_coord;
-    double phi_accept_rate = 0;
-    double iter_count = 0;
+    // phi MH step variables
+    double phi_accept_count = 0;
+    unsigned int batch_count_50 = 1;
+    double phi_s = 0;
+
+    //iter count
+    unsigned int iter_count = 0;
+    unsigned int inclburn_iter_count = 0;
 
     // PMCC variables
     std::normal_distribution<double> pmcc_y_sampler = std::normal_distribution<double>(0,1);
@@ -119,7 +119,7 @@ public:
     double calc_pmcc();
 
     double get_acceptance_rate(){
-        return phi_accept_rate/iter_count;
+        return phi_accept_count/inclburn_iter_count;
     }
 };
 

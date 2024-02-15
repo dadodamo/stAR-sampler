@@ -1,5 +1,5 @@
 CMakeFiles/ar_gibbs.dir/main.cpp.o: \
-  /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/main.cpp \
+  /Users/daniel/Desktop/stAR-sampler/main.cpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/iostream \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__assert \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__config \
@@ -991,7 +991,7 @@ CMakeFiles/ar_gibbs.dir/main.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__random/seed_seq.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__random/student_t_distribution.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__random/weibull_distribution.h \
-  /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/matern.h \
+  /Users/daniel/Desktop/stAR-sampler/matern.h \
   /users/daniel/Desktop/libraries/boost/boost/math/special_functions/bessel.hpp \
   /users/daniel/Desktop/libraries/boost/boost/math/special_functions/math_fwd.hpp \
   /users/daniel/Desktop/libraries/boost/boost/math/special_functions/detail/round_fwd.hpp \
@@ -1522,14 +1522,14 @@ CMakeFiles/ar_gibbs.dir/main.cpp.o: \
   /users/daniel/Desktop/libraries/boost/boost/math/special_functions/detail/iconv.hpp \
   /users/daniel/Desktop/libraries/boost/boost/math/special_functions/sinc.hpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/numbers \
-  /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/calc_posterior/posterior.h \
-  /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/cmake-build-debug/../coordinates/coordinates.h \
-  /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/cmake-build-debug/../matern.h \
-  /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/coordinates/coordinates.h \
-  /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/ar_model/ar_class.h \
-  /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/ar_model/../coordinates/coordinates.h \
-  /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/ar_model/../matern.h \
-  /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/ar_model/../cmake-build-debug/proto/ydata.pb.h \
+  /Users/daniel/Desktop/stAR-sampler/calc_posterior/posterior.h \
+  /Users/daniel/Desktop/stAR-sampler/cmake-build-debug/../coordinates/coordinates.h \
+  /Users/daniel/Desktop/stAR-sampler/cmake-build-debug/../matern.h \
+  /Users/daniel/Desktop/stAR-sampler/coordinates/coordinates.h \
+  /Users/daniel/Desktop/stAR-sampler/ar_model/ar_class.h \
+  /Users/daniel/Desktop/stAR-sampler/ar_model/../coordinates/coordinates.h \
+  /Users/daniel/Desktop/stAR-sampler/ar_model/../matern.h \
+  /Users/daniel/Desktop/stAR-sampler/ar_model/../cmake-build-debug/proto/ydata.pb.h \
   /usr/local/include/google/protobuf/port_def.inc \
   /usr/local/include/google/protobuf/port_undef.inc \
   /usr/local/include/google/protobuf/io/coded_stream.h \
@@ -1583,12 +1583,12 @@ CMakeFiles/ar_gibbs.dir/main.cpp.o: \
   /usr/local/include/google/protobuf/stubs/stl_util.h \
   /usr/local/include/google/protobuf/message.h \
   /usr/local/include/google/protobuf/extension_set.h \
-  /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/ar_model/../cmake-build-debug/proto/paramdata.pb.h \
-  /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/ar_model/../protocpp/serialize.h \
-  /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/ar_model/../protocpp/../cmake-build-debug/proto/ydata.pb.h \
-  /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/ar_model/../protocpp/../cmake-build-debug/proto/paramdata.pb.h \
-  /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/ar_model/../calc_posterior/posterior.h \
-  /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/ar_model/../debug_functions/debug.h \
-  /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/debug_functions/debug.h \
-  /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/cmake-build-debug/proto/parsedata.pb.h \
-  /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/protocpp/serialize.h
+  /Users/daniel/Desktop/stAR-sampler/ar_model/../cmake-build-debug/proto/paramdata.pb.h \
+  /Users/daniel/Desktop/stAR-sampler/ar_model/../protocpp/serialize.h \
+  /Users/daniel/Desktop/stAR-sampler/ar_model/../protocpp/../cmake-build-debug/proto/ydata.pb.h \
+  /Users/daniel/Desktop/stAR-sampler/ar_model/../protocpp/../cmake-build-debug/proto/paramdata.pb.h \
+  /Users/daniel/Desktop/stAR-sampler/ar_model/../calc_posterior/posterior.h \
+  /Users/daniel/Desktop/stAR-sampler/ar_model/../debug_functions/debug.h \
+  /Users/daniel/Desktop/stAR-sampler/debug_functions/debug.h \
+  /Users/daniel/Desktop/stAR-sampler/cmake-build-debug/proto/parsedata.pb.h \
+  /Users/daniel/Desktop/stAR-sampler/protocpp/serialize.h

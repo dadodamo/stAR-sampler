@@ -1,6 +1,6 @@
 CMakeFiles/ar_gibbs.dir/calc_posterior/posterior.cpp.o: \
-  /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/calc_posterior/posterior.cpp \
-  /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/calc_posterior/posterior.h \
+  /Users/daniel/Desktop/stAR-sampler/calc_posterior/posterior.cpp \
+  /Users/daniel/Desktop/stAR-sampler/calc_posterior/posterior.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/cmath \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__assert \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__config \
@@ -974,8 +974,8 @@ CMakeFiles/ar_gibbs.dir/calc_posterior/posterior.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__random/seed_seq.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__random/student_t_distribution.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__random/weibull_distribution.h \
-  /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/cmake-build-debug/../coordinates/coordinates.h \
-  /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/cmake-build-debug/../matern.h \
+  /Users/daniel/Desktop/stAR-sampler/cmake-build-debug/../coordinates/coordinates.h \
+  /Users/daniel/Desktop/stAR-sampler/cmake-build-debug/../matern.h \
   /users/daniel/Desktop/libraries/boost/boost/math/special_functions/bessel.hpp \
   /users/daniel/Desktop/libraries/boost/boost/math/special_functions/math_fwd.hpp \
   /users/daniel/Desktop/libraries/boost/boost/math/special_functions/detail/round_fwd.hpp \

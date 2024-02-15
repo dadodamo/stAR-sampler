@@ -53,10 +53,10 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import
+CMAKE_SOURCE_DIR = /Users/daniel/Desktop/stAR-sampler
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/daniel/Desktop/stAR-sampler/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include proto/CMakeFiles/proto.dir/depend.make
@@ -69,34 +69,34 @@ include proto/CMakeFiles/proto.dir/progress.make
 # Include the compile flags for this target's objects.
 include proto/CMakeFiles/proto.dir/flags.make
 
-proto/ydata.pb.h: /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/proto/ydata.proto
+proto/ydata.pb.h: /Users/daniel/Desktop/stAR-sampler/proto/ydata.proto
 proto/ydata.pb.h: /usr/local/bin/protoc
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Running cpp protocol buffer compiler on ydata.proto"
-	cd /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/cmake-build-debug/proto && /usr/local/bin/protoc --cpp_out /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/cmake-build-debug/proto -I /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/proto /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/proto/ydata.proto
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/daniel/Desktop/stAR-sampler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Running cpp protocol buffer compiler on ydata.proto"
+	cd /Users/daniel/Desktop/stAR-sampler/cmake-build-debug/proto && /usr/local/bin/protoc --cpp_out /Users/daniel/Desktop/stAR-sampler/cmake-build-debug/proto -I /Users/daniel/Desktop/stAR-sampler/proto /Users/daniel/Desktop/stAR-sampler/proto/ydata.proto
 
 proto/ydata.pb.cc: proto/ydata.pb.h
 	@$(CMAKE_COMMAND) -E touch_nocreate proto/ydata.pb.cc
 
-proto/xdata.pb.h: /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/proto/xdata.proto
+proto/xdata.pb.h: /Users/daniel/Desktop/stAR-sampler/proto/xdata.proto
 proto/xdata.pb.h: /usr/local/bin/protoc
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Running cpp protocol buffer compiler on xdata.proto"
-	cd /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/cmake-build-debug/proto && /usr/local/bin/protoc --cpp_out /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/cmake-build-debug/proto -I /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/proto /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/proto/xdata.proto
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/daniel/Desktop/stAR-sampler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Running cpp protocol buffer compiler on xdata.proto"
+	cd /Users/daniel/Desktop/stAR-sampler/cmake-build-debug/proto && /usr/local/bin/protoc --cpp_out /Users/daniel/Desktop/stAR-sampler/cmake-build-debug/proto -I /Users/daniel/Desktop/stAR-sampler/proto /Users/daniel/Desktop/stAR-sampler/proto/xdata.proto
 
 proto/xdata.pb.cc: proto/xdata.pb.h
 	@$(CMAKE_COMMAND) -E touch_nocreate proto/xdata.pb.cc
 
-proto/paramdata.pb.h: /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/proto/paramdata.proto
+proto/paramdata.pb.h: /Users/daniel/Desktop/stAR-sampler/proto/paramdata.proto
 proto/paramdata.pb.h: /usr/local/bin/protoc
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Running cpp protocol buffer compiler on paramdata.proto"
-	cd /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/cmake-build-debug/proto && /usr/local/bin/protoc --cpp_out /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/cmake-build-debug/proto -I /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/proto /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/proto/paramdata.proto
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/daniel/Desktop/stAR-sampler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Running cpp protocol buffer compiler on paramdata.proto"
+	cd /Users/daniel/Desktop/stAR-sampler/cmake-build-debug/proto && /usr/local/bin/protoc --cpp_out /Users/daniel/Desktop/stAR-sampler/cmake-build-debug/proto -I /Users/daniel/Desktop/stAR-sampler/proto /Users/daniel/Desktop/stAR-sampler/proto/paramdata.proto
 
 proto/paramdata.pb.cc: proto/paramdata.pb.h
 	@$(CMAKE_COMMAND) -E touch_nocreate proto/paramdata.pb.cc
 
-proto/parsedata.pb.h: /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/proto/parsedata.proto
+proto/parsedata.pb.h: /Users/daniel/Desktop/stAR-sampler/proto/parsedata.proto
 proto/parsedata.pb.h: /usr/local/bin/protoc
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Running cpp protocol buffer compiler on parsedata.proto"
-	cd /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/cmake-build-debug/proto && /usr/local/bin/protoc --cpp_out /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/cmake-build-debug/proto -I /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/proto /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/proto/parsedata.proto
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/daniel/Desktop/stAR-sampler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Running cpp protocol buffer compiler on parsedata.proto"
+	cd /Users/daniel/Desktop/stAR-sampler/cmake-build-debug/proto && /usr/local/bin/protoc --cpp_out /Users/daniel/Desktop/stAR-sampler/cmake-build-debug/proto -I /Users/daniel/Desktop/stAR-sampler/proto /Users/daniel/Desktop/stAR-sampler/proto/parsedata.proto
 
 proto/parsedata.pb.cc: proto/parsedata.pb.h
 	@$(CMAKE_COMMAND) -E touch_nocreate proto/parsedata.pb.cc
@@ -104,72 +104,72 @@ proto/parsedata.pb.cc: proto/parsedata.pb.h
 proto/CMakeFiles/proto.dir/ydata.pb.cc.o: proto/CMakeFiles/proto.dir/flags.make
 proto/CMakeFiles/proto.dir/ydata.pb.cc.o: proto/ydata.pb.cc
 proto/CMakeFiles/proto.dir/ydata.pb.cc.o: proto/CMakeFiles/proto.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object proto/CMakeFiles/proto.dir/ydata.pb.cc.o"
-	cd /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/cmake-build-debug/proto && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT proto/CMakeFiles/proto.dir/ydata.pb.cc.o -MF CMakeFiles/proto.dir/ydata.pb.cc.o.d -o CMakeFiles/proto.dir/ydata.pb.cc.o -c /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/cmake-build-debug/proto/ydata.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/daniel/Desktop/stAR-sampler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object proto/CMakeFiles/proto.dir/ydata.pb.cc.o"
+	cd /Users/daniel/Desktop/stAR-sampler/cmake-build-debug/proto && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT proto/CMakeFiles/proto.dir/ydata.pb.cc.o -MF CMakeFiles/proto.dir/ydata.pb.cc.o.d -o CMakeFiles/proto.dir/ydata.pb.cc.o -c /Users/daniel/Desktop/stAR-sampler/cmake-build-debug/proto/ydata.pb.cc
 
 proto/CMakeFiles/proto.dir/ydata.pb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/proto.dir/ydata.pb.cc.i"
-	cd /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/cmake-build-debug/proto && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/cmake-build-debug/proto/ydata.pb.cc > CMakeFiles/proto.dir/ydata.pb.cc.i
+	cd /Users/daniel/Desktop/stAR-sampler/cmake-build-debug/proto && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/daniel/Desktop/stAR-sampler/cmake-build-debug/proto/ydata.pb.cc > CMakeFiles/proto.dir/ydata.pb.cc.i
 
 proto/CMakeFiles/proto.dir/ydata.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/proto.dir/ydata.pb.cc.s"
-	cd /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/cmake-build-debug/proto && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/cmake-build-debug/proto/ydata.pb.cc -o CMakeFiles/proto.dir/ydata.pb.cc.s
+	cd /Users/daniel/Desktop/stAR-sampler/cmake-build-debug/proto && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/daniel/Desktop/stAR-sampler/cmake-build-debug/proto/ydata.pb.cc -o CMakeFiles/proto.dir/ydata.pb.cc.s
 
 proto/CMakeFiles/proto.dir/xdata.pb.cc.o: proto/CMakeFiles/proto.dir/flags.make
 proto/CMakeFiles/proto.dir/xdata.pb.cc.o: proto/xdata.pb.cc
 proto/CMakeFiles/proto.dir/xdata.pb.cc.o: proto/CMakeFiles/proto.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object proto/CMakeFiles/proto.dir/xdata.pb.cc.o"
-	cd /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/cmake-build-debug/proto && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT proto/CMakeFiles/proto.dir/xdata.pb.cc.o -MF CMakeFiles/proto.dir/xdata.pb.cc.o.d -o CMakeFiles/proto.dir/xdata.pb.cc.o -c /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/cmake-build-debug/proto/xdata.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/daniel/Desktop/stAR-sampler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object proto/CMakeFiles/proto.dir/xdata.pb.cc.o"
+	cd /Users/daniel/Desktop/stAR-sampler/cmake-build-debug/proto && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT proto/CMakeFiles/proto.dir/xdata.pb.cc.o -MF CMakeFiles/proto.dir/xdata.pb.cc.o.d -o CMakeFiles/proto.dir/xdata.pb.cc.o -c /Users/daniel/Desktop/stAR-sampler/cmake-build-debug/proto/xdata.pb.cc
 
 proto/CMakeFiles/proto.dir/xdata.pb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/proto.dir/xdata.pb.cc.i"
-	cd /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/cmake-build-debug/proto && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/cmake-build-debug/proto/xdata.pb.cc > CMakeFiles/proto.dir/xdata.pb.cc.i
+	cd /Users/daniel/Desktop/stAR-sampler/cmake-build-debug/proto && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/daniel/Desktop/stAR-sampler/cmake-build-debug/proto/xdata.pb.cc > CMakeFiles/proto.dir/xdata.pb.cc.i
 
 proto/CMakeFiles/proto.dir/xdata.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/proto.dir/xdata.pb.cc.s"
-	cd /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/cmake-build-debug/proto && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/cmake-build-debug/proto/xdata.pb.cc -o CMakeFiles/proto.dir/xdata.pb.cc.s
+	cd /Users/daniel/Desktop/stAR-sampler/cmake-build-debug/proto && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/daniel/Desktop/stAR-sampler/cmake-build-debug/proto/xdata.pb.cc -o CMakeFiles/proto.dir/xdata.pb.cc.s
 
 proto/CMakeFiles/proto.dir/paramdata.pb.cc.o: proto/CMakeFiles/proto.dir/flags.make
 proto/CMakeFiles/proto.dir/paramdata.pb.cc.o: proto/paramdata.pb.cc
 proto/CMakeFiles/proto.dir/paramdata.pb.cc.o: proto/CMakeFiles/proto.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object proto/CMakeFiles/proto.dir/paramdata.pb.cc.o"
-	cd /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/cmake-build-debug/proto && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT proto/CMakeFiles/proto.dir/paramdata.pb.cc.o -MF CMakeFiles/proto.dir/paramdata.pb.cc.o.d -o CMakeFiles/proto.dir/paramdata.pb.cc.o -c /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/cmake-build-debug/proto/paramdata.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/daniel/Desktop/stAR-sampler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object proto/CMakeFiles/proto.dir/paramdata.pb.cc.o"
+	cd /Users/daniel/Desktop/stAR-sampler/cmake-build-debug/proto && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT proto/CMakeFiles/proto.dir/paramdata.pb.cc.o -MF CMakeFiles/proto.dir/paramdata.pb.cc.o.d -o CMakeFiles/proto.dir/paramdata.pb.cc.o -c /Users/daniel/Desktop/stAR-sampler/cmake-build-debug/proto/paramdata.pb.cc
 
 proto/CMakeFiles/proto.dir/paramdata.pb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/proto.dir/paramdata.pb.cc.i"
-	cd /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/cmake-build-debug/proto && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/cmake-build-debug/proto/paramdata.pb.cc > CMakeFiles/proto.dir/paramdata.pb.cc.i
+	cd /Users/daniel/Desktop/stAR-sampler/cmake-build-debug/proto && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/daniel/Desktop/stAR-sampler/cmake-build-debug/proto/paramdata.pb.cc > CMakeFiles/proto.dir/paramdata.pb.cc.i
 
 proto/CMakeFiles/proto.dir/paramdata.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/proto.dir/paramdata.pb.cc.s"
-	cd /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/cmake-build-debug/proto && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/cmake-build-debug/proto/paramdata.pb.cc -o CMakeFiles/proto.dir/paramdata.pb.cc.s
+	cd /Users/daniel/Desktop/stAR-sampler/cmake-build-debug/proto && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/daniel/Desktop/stAR-sampler/cmake-build-debug/proto/paramdata.pb.cc -o CMakeFiles/proto.dir/paramdata.pb.cc.s
 
 proto/CMakeFiles/proto.dir/parsedata.pb.cc.o: proto/CMakeFiles/proto.dir/flags.make
 proto/CMakeFiles/proto.dir/parsedata.pb.cc.o: proto/parsedata.pb.cc
 proto/CMakeFiles/proto.dir/parsedata.pb.cc.o: proto/CMakeFiles/proto.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object proto/CMakeFiles/proto.dir/parsedata.pb.cc.o"
-	cd /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/cmake-build-debug/proto && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT proto/CMakeFiles/proto.dir/parsedata.pb.cc.o -MF CMakeFiles/proto.dir/parsedata.pb.cc.o.d -o CMakeFiles/proto.dir/parsedata.pb.cc.o -c /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/cmake-build-debug/proto/parsedata.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/daniel/Desktop/stAR-sampler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object proto/CMakeFiles/proto.dir/parsedata.pb.cc.o"
+	cd /Users/daniel/Desktop/stAR-sampler/cmake-build-debug/proto && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT proto/CMakeFiles/proto.dir/parsedata.pb.cc.o -MF CMakeFiles/proto.dir/parsedata.pb.cc.o.d -o CMakeFiles/proto.dir/parsedata.pb.cc.o -c /Users/daniel/Desktop/stAR-sampler/cmake-build-debug/proto/parsedata.pb.cc
 
 proto/CMakeFiles/proto.dir/parsedata.pb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/proto.dir/parsedata.pb.cc.i"
-	cd /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/cmake-build-debug/proto && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/cmake-build-debug/proto/parsedata.pb.cc > CMakeFiles/proto.dir/parsedata.pb.cc.i
+	cd /Users/daniel/Desktop/stAR-sampler/cmake-build-debug/proto && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/daniel/Desktop/stAR-sampler/cmake-build-debug/proto/parsedata.pb.cc > CMakeFiles/proto.dir/parsedata.pb.cc.i
 
 proto/CMakeFiles/proto.dir/parsedata.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/proto.dir/parsedata.pb.cc.s"
-	cd /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/cmake-build-debug/proto && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/cmake-build-debug/proto/parsedata.pb.cc -o CMakeFiles/proto.dir/parsedata.pb.cc.s
+	cd /Users/daniel/Desktop/stAR-sampler/cmake-build-debug/proto && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/daniel/Desktop/stAR-sampler/cmake-build-debug/proto/parsedata.pb.cc -o CMakeFiles/proto.dir/parsedata.pb.cc.s
 
 proto/CMakeFiles/proto.dir/__/protocpp/serialize.cpp.o: proto/CMakeFiles/proto.dir/flags.make
-proto/CMakeFiles/proto.dir/__/protocpp/serialize.cpp.o: /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/protocpp/serialize.cpp
+proto/CMakeFiles/proto.dir/__/protocpp/serialize.cpp.o: /Users/daniel/Desktop/stAR-sampler/protocpp/serialize.cpp
 proto/CMakeFiles/proto.dir/__/protocpp/serialize.cpp.o: proto/CMakeFiles/proto.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object proto/CMakeFiles/proto.dir/__/protocpp/serialize.cpp.o"
-	cd /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/cmake-build-debug/proto && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT proto/CMakeFiles/proto.dir/__/protocpp/serialize.cpp.o -MF CMakeFiles/proto.dir/__/protocpp/serialize.cpp.o.d -o CMakeFiles/proto.dir/__/protocpp/serialize.cpp.o -c /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/protocpp/serialize.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/daniel/Desktop/stAR-sampler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object proto/CMakeFiles/proto.dir/__/protocpp/serialize.cpp.o"
+	cd /Users/daniel/Desktop/stAR-sampler/cmake-build-debug/proto && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT proto/CMakeFiles/proto.dir/__/protocpp/serialize.cpp.o -MF CMakeFiles/proto.dir/__/protocpp/serialize.cpp.o.d -o CMakeFiles/proto.dir/__/protocpp/serialize.cpp.o -c /Users/daniel/Desktop/stAR-sampler/protocpp/serialize.cpp
 
 proto/CMakeFiles/proto.dir/__/protocpp/serialize.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/proto.dir/__/protocpp/serialize.cpp.i"
-	cd /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/cmake-build-debug/proto && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/protocpp/serialize.cpp > CMakeFiles/proto.dir/__/protocpp/serialize.cpp.i
+	cd /Users/daniel/Desktop/stAR-sampler/cmake-build-debug/proto && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/daniel/Desktop/stAR-sampler/protocpp/serialize.cpp > CMakeFiles/proto.dir/__/protocpp/serialize.cpp.i
 
 proto/CMakeFiles/proto.dir/__/protocpp/serialize.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/proto.dir/__/protocpp/serialize.cpp.s"
-	cd /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/cmake-build-debug/proto && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/protocpp/serialize.cpp -o CMakeFiles/proto.dir/__/protocpp/serialize.cpp.s
+	cd /Users/daniel/Desktop/stAR-sampler/cmake-build-debug/proto && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/daniel/Desktop/stAR-sampler/protocpp/serialize.cpp -o CMakeFiles/proto.dir/__/protocpp/serialize.cpp.s
 
 # Object files for target proto
 proto_OBJECTS = \
@@ -189,16 +189,16 @@ proto/libproto.a: proto/CMakeFiles/proto.dir/parsedata.pb.cc.o
 proto/libproto.a: proto/CMakeFiles/proto.dir/__/protocpp/serialize.cpp.o
 proto/libproto.a: proto/CMakeFiles/proto.dir/build.make
 proto/libproto.a: proto/CMakeFiles/proto.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX static library libproto.a"
-	cd /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/cmake-build-debug/proto && $(CMAKE_COMMAND) -P CMakeFiles/proto.dir/cmake_clean_target.cmake
-	cd /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/cmake-build-debug/proto && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/proto.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/daniel/Desktop/stAR-sampler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX static library libproto.a"
+	cd /Users/daniel/Desktop/stAR-sampler/cmake-build-debug/proto && $(CMAKE_COMMAND) -P CMakeFiles/proto.dir/cmake_clean_target.cmake
+	cd /Users/daniel/Desktop/stAR-sampler/cmake-build-debug/proto && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/proto.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 proto/CMakeFiles/proto.dir/build: proto/libproto.a
 .PHONY : proto/CMakeFiles/proto.dir/build
 
 proto/CMakeFiles/proto.dir/clean:
-	cd /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/cmake-build-debug/proto && $(CMAKE_COMMAND) -P CMakeFiles/proto.dir/cmake_clean.cmake
+	cd /Users/daniel/Desktop/stAR-sampler/cmake-build-debug/proto && $(CMAKE_COMMAND) -P CMakeFiles/proto.dir/cmake_clean.cmake
 .PHONY : proto/CMakeFiles/proto.dir/clean
 
 proto/CMakeFiles/proto.dir/depend: proto/paramdata.pb.cc
@@ -209,6 +209,6 @@ proto/CMakeFiles/proto.dir/depend: proto/xdata.pb.cc
 proto/CMakeFiles/proto.dir/depend: proto/xdata.pb.h
 proto/CMakeFiles/proto.dir/depend: proto/ydata.pb.cc
 proto/CMakeFiles/proto.dir/depend: proto/ydata.pb.h
-	cd /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/proto /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/cmake-build-debug /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/cmake-build-debug/proto /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/cmake-build-debug/proto/CMakeFiles/proto.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /Users/daniel/Desktop/stAR-sampler/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/daniel/Desktop/stAR-sampler /Users/daniel/Desktop/stAR-sampler/proto /Users/daniel/Desktop/stAR-sampler/cmake-build-debug /Users/daniel/Desktop/stAR-sampler/cmake-build-debug/proto /Users/daniel/Desktop/stAR-sampler/cmake-build-debug/proto/CMakeFiles/proto.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : proto/CMakeFiles/proto.dir/depend
 

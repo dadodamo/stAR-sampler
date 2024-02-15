@@ -1,12 +1,12 @@
 library( "RProtoBuf")
-setwd("/users/daniel/desktop/ar_gibbs")
+setwd("/users/daniel/desktop/stAR-sampler")
 
 
 ##### gamma plotting #####
 x = seq(0,100,0.01);
 dev.off()
 
-plot(x, dgamma(x,2,1), type = 'l', c(0,10))
+plot(x, dgamma(x,2,rate = 1), type = 'l', c(0,10))
 
 ##### new proto files ##### 
 
@@ -23,7 +23,7 @@ list_sigma_eps <- as.list(msg_samples$sigma_eps)
 list_sigma_0 <- as.list(msg_samples$sigma_0)
 list_beta <- as.list(msg_samples$beta)
 list_mu0 <- as.list(msg_samples$mu_0)
-list_o <- as.list(msg_samples$o)
+#list_o <- as.list(msg_samples$o)
 
 beta <- sapply(list_beta, function(x){x$vec_value})
 mu0 <- sapply(list_mu0, function(x){x$vec_value})
@@ -32,8 +32,8 @@ phi <- sapply(list_phi, function(x){x});
 sig_w <- sapply(list_sigma_w, function(x){x});
 sig_eps <- sapply(list_sigma_eps, function(x){x});
 sig_0 <- sapply(list_sigma_0, function(x){x});
-o <- sapply(list_o, function(x){x$vec});
-o <- sapply(o, function(x){x$vec_value});
+#o <- sapply(list_o, function(x){x$vec});
+#o <- sapply(o, function(x){x$vec_value});
 
 
 
@@ -68,7 +68,7 @@ dev.off()
 dev.off()
 plot(rho[1000:5000], type = 'l', col = 'grey', ylim = c(0.45, 0.55), ylab = "", main = expression(rho), xlab = "Iteration")
 lines(1:4000, rep(0.5, 4000), type = 'l', col = 'green', lwd = 2)
-
+plot(rho, type = 'l')
 
 
 #mu_0
@@ -110,6 +110,7 @@ mean(sig_eps)
 dev.off()
 plot(sig_w[1000:5000], type = 'l',main =  bquote(sigma[w]^2), col ='grey', ylim = c(0, 1) ,xlab = "Iteration" , ylab = "")
 lines(1:4000, rep(0.1, 4000), type = 'l', col = "green")
+plot(sig_w, type = 'l')
 mean(sig_w)
 
 ## sig_0
@@ -117,6 +118,7 @@ dev.off()
 plot(sig_0[1000:5000],col = 'grey' ,type = 'l', main = bquote(sigma[0]^2), xlab = "Iteration", ylab = "")
 lines(1:4000, rep(1, 4000), type = 'l', col = "green")
 mean(sig_0)
+plot(sig_0, type = 'l')
 
 ### phi
 dev.off()

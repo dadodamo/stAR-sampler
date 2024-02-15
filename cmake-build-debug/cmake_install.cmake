@@ -1,4 +1,4 @@
-# Install script for directory: /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import
+# Install script for directory: /Users/daniel/Desktop/stAR-sampler
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,7 +39,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/cmake-build-debug/proto/cmake_install.cmake")
+  include("/Users/daniel/Desktop/stAR-sampler/cmake-build-debug/proto/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/daniel/Desktop/stAR-sampler/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

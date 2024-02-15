@@ -8,11 +8,11 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/ar_model/ar_class.cpp" "CMakeFiles/ar_gibbs.dir/ar_model/ar_class.cpp.o" "gcc" "CMakeFiles/ar_gibbs.dir/ar_model/ar_class.cpp.o.d"
-  "/Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/calc_posterior/posterior.cpp" "CMakeFiles/ar_gibbs.dir/calc_posterior/posterior.cpp.o" "gcc" "CMakeFiles/ar_gibbs.dir/calc_posterior/posterior.cpp.o.d"
-  "/Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/coordinates/coordinates.cpp" "CMakeFiles/ar_gibbs.dir/coordinates/coordinates.cpp.o" "gcc" "CMakeFiles/ar_gibbs.dir/coordinates/coordinates.cpp.o.d"
-  "/Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/main.cpp" "CMakeFiles/ar_gibbs.dir/main.cpp.o" "gcc" "CMakeFiles/ar_gibbs.dir/main.cpp.o.d"
-  "/Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/protocpp/serialize.cpp" "CMakeFiles/ar_gibbs.dir/protocpp/serialize.cpp.o" "gcc" "CMakeFiles/ar_gibbs.dir/protocpp/serialize.cpp.o.d"
+  "/Users/daniel/Desktop/stAR-sampler/ar_model/ar_class.cpp" "CMakeFiles/ar_gibbs.dir/ar_model/ar_class.cpp.o" "gcc" "CMakeFiles/ar_gibbs.dir/ar_model/ar_class.cpp.o.d"
+  "/Users/daniel/Desktop/stAR-sampler/calc_posterior/posterior.cpp" "CMakeFiles/ar_gibbs.dir/calc_posterior/posterior.cpp.o" "gcc" "CMakeFiles/ar_gibbs.dir/calc_posterior/posterior.cpp.o.d"
+  "/Users/daniel/Desktop/stAR-sampler/coordinates/coordinates.cpp" "CMakeFiles/ar_gibbs.dir/coordinates/coordinates.cpp.o" "gcc" "CMakeFiles/ar_gibbs.dir/coordinates/coordinates.cpp.o.d"
+  "/Users/daniel/Desktop/stAR-sampler/main.cpp" "CMakeFiles/ar_gibbs.dir/main.cpp.o" "gcc" "CMakeFiles/ar_gibbs.dir/main.cpp.o.d"
+  "/Users/daniel/Desktop/stAR-sampler/protocpp/serialize.cpp" "CMakeFiles/ar_gibbs.dir/protocpp/serialize.cpp.o" "gcc" "CMakeFiles/ar_gibbs.dir/protocpp/serialize.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

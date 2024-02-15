@@ -1,6 +1,6 @@
 CMakeFiles/ar_gibbs.dir/coordinates/coordinates.cpp.o: \
-  /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/coordinates/coordinates.cpp \
-  /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/coordinates/coordinates.h \
+  /Users/daniel/Desktop/stAR-sampler/coordinates/coordinates.cpp \
+  /Users/daniel/Desktop/stAR-sampler/coordinates/coordinates.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/iostream \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__assert \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__config \
@@ -925,7 +925,7 @@ CMakeFiles/ar_gibbs.dir/coordinates/coordinates.cpp.o: \
   /users/daniel/Desktop/libraries/Eigen3/Eigen/src/Eigenvalues/GeneralizedEigenSolver.h \
   /users/daniel/Desktop/libraries/Eigen3/Eigen/src/Eigenvalues/./RealQZ.h \
   /users/daniel/Desktop/libraries/Eigen3/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h \
-  /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/cmake-build-debug/../matern.h \
+  /Users/daniel/Desktop/stAR-sampler/cmake-build-debug/../matern.h \
   /users/daniel/Desktop/libraries/boost/boost/math/special_functions/bessel.hpp \
   /users/daniel/Desktop/libraries/boost/boost/math/special_functions/math_fwd.hpp \
   /users/daniel/Desktop/libraries/boost/boost/math/special_functions/detail/round_fwd.hpp \

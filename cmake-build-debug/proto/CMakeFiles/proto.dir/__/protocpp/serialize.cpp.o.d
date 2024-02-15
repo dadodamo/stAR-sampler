@@ -1,6 +1,6 @@
 proto/CMakeFiles/proto.dir/__/protocpp/serialize.cpp.o: \
-  /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/protocpp/serialize.cpp \
-  /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/protocpp/serialize.h \
+  /Users/daniel/Desktop/stAR-sampler/protocpp/serialize.cpp \
+  /Users/daniel/Desktop/stAR-sampler/protocpp/serialize.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/iostream \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__assert \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__config \
@@ -732,7 +732,7 @@ proto/CMakeFiles/proto.dir/__/protocpp/serialize.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_fsfilcnt_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/_types/_nl_item.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__bsd_locale_defaults.h \
-  /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/protocpp/../cmake-build-debug/proto/ydata.pb.h \
+  /Users/daniel/Desktop/stAR-sampler/protocpp/../cmake-build-debug/proto/ydata.pb.h \
   /usr/local/include/google/protobuf/port_def.inc \
   /usr/local/include/google/protobuf/port_undef.inc \
   /usr/local/include/google/protobuf/io/coded_stream.h \
@@ -786,7 +786,7 @@ proto/CMakeFiles/proto.dir/__/protocpp/serialize.cpp.o: \
   /usr/local/include/google/protobuf/stubs/stl_util.h \
   /usr/local/include/google/protobuf/message.h \
   /usr/local/include/google/protobuf/extension_set.h \
-  /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/protocpp/../cmake-build-debug/proto/paramdata.pb.h \
+  /Users/daniel/Desktop/stAR-sampler/protocpp/../cmake-build-debug/proto/paramdata.pb.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/fstream \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/filesystem \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/copy_options.h \

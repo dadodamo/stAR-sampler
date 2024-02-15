@@ -57,10 +57,10 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import
+CMAKE_SOURCE_DIR = /Users/daniel/Desktop/stAR-sampler
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/daniel/Desktop/stAR-sampler/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/cmake-build-debug/CMakeFiles /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/cmake-build-debug/proto//CMakeFiles/progress.marks
-	cd /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 proto/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/cmake-build-debug/CMakeFiles 0
+	cd /Users/daniel/Desktop/stAR-sampler/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /Users/daniel/Desktop/stAR-sampler/cmake-build-debug/CMakeFiles /Users/daniel/Desktop/stAR-sampler/cmake-build-debug/proto//CMakeFiles/progress.marks
+	cd /Users/daniel/Desktop/stAR-sampler/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 proto/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/daniel/Desktop/stAR-sampler/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 proto/clean
+	cd /Users/daniel/Desktop/stAR-sampler/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 proto/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,22 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 proto/preinstall
+	cd /Users/daniel/Desktop/stAR-sampler/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 proto/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 proto/preinstall
+	cd /Users/daniel/Desktop/stAR-sampler/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 proto/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/daniel/Desktop/stAR-sampler/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 proto/CMakeFiles/proto.dir/rule:
-	cd /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 proto/CMakeFiles/proto.dir/rule
+	cd /Users/daniel/Desktop/stAR-sampler/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 proto/CMakeFiles/proto.dir/rule
 .PHONY : proto/CMakeFiles/proto.dir/rule
 
 # Convenience name for target.
@@ -127,7 +127,7 @@ proto: proto/CMakeFiles/proto.dir/rule
 
 # fast build rule for target.
 proto/fast:
-	cd /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/cmake-build-debug && $(MAKE) $(MAKESILENT) -f proto/CMakeFiles/proto.dir/build.make proto/CMakeFiles/proto.dir/build
+	cd /Users/daniel/Desktop/stAR-sampler/cmake-build-debug && $(MAKE) $(MAKESILENT) -f proto/CMakeFiles/proto.dir/build.make proto/CMakeFiles/proto.dir/build
 .PHONY : proto/fast
 
 __/protocpp/serialize.o: __/protocpp/serialize.cpp.o
@@ -135,7 +135,7 @@ __/protocpp/serialize.o: __/protocpp/serialize.cpp.o
 
 # target to build an object file
 __/protocpp/serialize.cpp.o:
-	cd /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/cmake-build-debug && $(MAKE) $(MAKESILENT) -f proto/CMakeFiles/proto.dir/build.make proto/CMakeFiles/proto.dir/__/protocpp/serialize.cpp.o
+	cd /Users/daniel/Desktop/stAR-sampler/cmake-build-debug && $(MAKE) $(MAKESILENT) -f proto/CMakeFiles/proto.dir/build.make proto/CMakeFiles/proto.dir/__/protocpp/serialize.cpp.o
 .PHONY : __/protocpp/serialize.cpp.o
 
 __/protocpp/serialize.i: __/protocpp/serialize.cpp.i
@@ -143,7 +143,7 @@ __/protocpp/serialize.i: __/protocpp/serialize.cpp.i
 
 # target to preprocess a source file
 __/protocpp/serialize.cpp.i:
-	cd /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/cmake-build-debug && $(MAKE) $(MAKESILENT) -f proto/CMakeFiles/proto.dir/build.make proto/CMakeFiles/proto.dir/__/protocpp/serialize.cpp.i
+	cd /Users/daniel/Desktop/stAR-sampler/cmake-build-debug && $(MAKE) $(MAKESILENT) -f proto/CMakeFiles/proto.dir/build.make proto/CMakeFiles/proto.dir/__/protocpp/serialize.cpp.i
 .PHONY : __/protocpp/serialize.cpp.i
 
 __/protocpp/serialize.s: __/protocpp/serialize.cpp.s
@@ -151,7 +151,7 @@ __/protocpp/serialize.s: __/protocpp/serialize.cpp.s
 
 # target to generate assembly for a file
 __/protocpp/serialize.cpp.s:
-	cd /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/cmake-build-debug && $(MAKE) $(MAKESILENT) -f proto/CMakeFiles/proto.dir/build.make proto/CMakeFiles/proto.dir/__/protocpp/serialize.cpp.s
+	cd /Users/daniel/Desktop/stAR-sampler/cmake-build-debug && $(MAKE) $(MAKESILENT) -f proto/CMakeFiles/proto.dir/build.make proto/CMakeFiles/proto.dir/__/protocpp/serialize.cpp.s
 .PHONY : __/protocpp/serialize.cpp.s
 
 paramdata.pb.o: paramdata.pb.cc.o
@@ -159,7 +159,7 @@ paramdata.pb.o: paramdata.pb.cc.o
 
 # target to build an object file
 paramdata.pb.cc.o:
-	cd /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/cmake-build-debug && $(MAKE) $(MAKESILENT) -f proto/CMakeFiles/proto.dir/build.make proto/CMakeFiles/proto.dir/paramdata.pb.cc.o
+	cd /Users/daniel/Desktop/stAR-sampler/cmake-build-debug && $(MAKE) $(MAKESILENT) -f proto/CMakeFiles/proto.dir/build.make proto/CMakeFiles/proto.dir/paramdata.pb.cc.o
 .PHONY : paramdata.pb.cc.o
 
 paramdata.pb.i: paramdata.pb.cc.i
@@ -167,7 +167,7 @@ paramdata.pb.i: paramdata.pb.cc.i
 
 # target to preprocess a source file
 paramdata.pb.cc.i:
-	cd /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/cmake-build-debug && $(MAKE) $(MAKESILENT) -f proto/CMakeFiles/proto.dir/build.make proto/CMakeFiles/proto.dir/paramdata.pb.cc.i
+	cd /Users/daniel/Desktop/stAR-sampler/cmake-build-debug && $(MAKE) $(MAKESILENT) -f proto/CMakeFiles/proto.dir/build.make proto/CMakeFiles/proto.dir/paramdata.pb.cc.i
 .PHONY : paramdata.pb.cc.i
 
 paramdata.pb.s: paramdata.pb.cc.s
@@ -175,7 +175,7 @@ paramdata.pb.s: paramdata.pb.cc.s
 
 # target to generate assembly for a file
 paramdata.pb.cc.s:
-	cd /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/cmake-build-debug && $(MAKE) $(MAKESILENT) -f proto/CMakeFiles/proto.dir/build.make proto/CMakeFiles/proto.dir/paramdata.pb.cc.s
+	cd /Users/daniel/Desktop/stAR-sampler/cmake-build-debug && $(MAKE) $(MAKESILENT) -f proto/CMakeFiles/proto.dir/build.make proto/CMakeFiles/proto.dir/paramdata.pb.cc.s
 .PHONY : paramdata.pb.cc.s
 
 parsedata.pb.o: parsedata.pb.cc.o
@@ -183,7 +183,7 @@ parsedata.pb.o: parsedata.pb.cc.o
 
 # target to build an object file
 parsedata.pb.cc.o:
-	cd /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/cmake-build-debug && $(MAKE) $(MAKESILENT) -f proto/CMakeFiles/proto.dir/build.make proto/CMakeFiles/proto.dir/parsedata.pb.cc.o
+	cd /Users/daniel/Desktop/stAR-sampler/cmake-build-debug && $(MAKE) $(MAKESILENT) -f proto/CMakeFiles/proto.dir/build.make proto/CMakeFiles/proto.dir/parsedata.pb.cc.o
 .PHONY : parsedata.pb.cc.o
 
 parsedata.pb.i: parsedata.pb.cc.i
@@ -191,7 +191,7 @@ parsedata.pb.i: parsedata.pb.cc.i
 
 # target to preprocess a source file
 parsedata.pb.cc.i:
-	cd /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/cmake-build-debug && $(MAKE) $(MAKESILENT) -f proto/CMakeFiles/proto.dir/build.make proto/CMakeFiles/proto.dir/parsedata.pb.cc.i
+	cd /Users/daniel/Desktop/stAR-sampler/cmake-build-debug && $(MAKE) $(MAKESILENT) -f proto/CMakeFiles/proto.dir/build.make proto/CMakeFiles/proto.dir/parsedata.pb.cc.i
 .PHONY : parsedata.pb.cc.i
 
 parsedata.pb.s: parsedata.pb.cc.s
@@ -199,7 +199,7 @@ parsedata.pb.s: parsedata.pb.cc.s
 
 # target to generate assembly for a file
 parsedata.pb.cc.s:
-	cd /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/cmake-build-debug && $(MAKE) $(MAKESILENT) -f proto/CMakeFiles/proto.dir/build.make proto/CMakeFiles/proto.dir/parsedata.pb.cc.s
+	cd /Users/daniel/Desktop/stAR-sampler/cmake-build-debug && $(MAKE) $(MAKESILENT) -f proto/CMakeFiles/proto.dir/build.make proto/CMakeFiles/proto.dir/parsedata.pb.cc.s
 .PHONY : parsedata.pb.cc.s
 
 xdata.pb.o: xdata.pb.cc.o
@@ -207,7 +207,7 @@ xdata.pb.o: xdata.pb.cc.o
 
 # target to build an object file
 xdata.pb.cc.o:
-	cd /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/cmake-build-debug && $(MAKE) $(MAKESILENT) -f proto/CMakeFiles/proto.dir/build.make proto/CMakeFiles/proto.dir/xdata.pb.cc.o
+	cd /Users/daniel/Desktop/stAR-sampler/cmake-build-debug && $(MAKE) $(MAKESILENT) -f proto/CMakeFiles/proto.dir/build.make proto/CMakeFiles/proto.dir/xdata.pb.cc.o
 .PHONY : xdata.pb.cc.o
 
 xdata.pb.i: xdata.pb.cc.i
@@ -215,7 +215,7 @@ xdata.pb.i: xdata.pb.cc.i
 
 # target to preprocess a source file
 xdata.pb.cc.i:
-	cd /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/cmake-build-debug && $(MAKE) $(MAKESILENT) -f proto/CMakeFiles/proto.dir/build.make proto/CMakeFiles/proto.dir/xdata.pb.cc.i
+	cd /Users/daniel/Desktop/stAR-sampler/cmake-build-debug && $(MAKE) $(MAKESILENT) -f proto/CMakeFiles/proto.dir/build.make proto/CMakeFiles/proto.dir/xdata.pb.cc.i
 .PHONY : xdata.pb.cc.i
 
 xdata.pb.s: xdata.pb.cc.s
@@ -223,7 +223,7 @@ xdata.pb.s: xdata.pb.cc.s
 
 # target to generate assembly for a file
 xdata.pb.cc.s:
-	cd /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/cmake-build-debug && $(MAKE) $(MAKESILENT) -f proto/CMakeFiles/proto.dir/build.make proto/CMakeFiles/proto.dir/xdata.pb.cc.s
+	cd /Users/daniel/Desktop/stAR-sampler/cmake-build-debug && $(MAKE) $(MAKESILENT) -f proto/CMakeFiles/proto.dir/build.make proto/CMakeFiles/proto.dir/xdata.pb.cc.s
 .PHONY : xdata.pb.cc.s
 
 ydata.pb.o: ydata.pb.cc.o
@@ -231,7 +231,7 @@ ydata.pb.o: ydata.pb.cc.o
 
 # target to build an object file
 ydata.pb.cc.o:
-	cd /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/cmake-build-debug && $(MAKE) $(MAKESILENT) -f proto/CMakeFiles/proto.dir/build.make proto/CMakeFiles/proto.dir/ydata.pb.cc.o
+	cd /Users/daniel/Desktop/stAR-sampler/cmake-build-debug && $(MAKE) $(MAKESILENT) -f proto/CMakeFiles/proto.dir/build.make proto/CMakeFiles/proto.dir/ydata.pb.cc.o
 .PHONY : ydata.pb.cc.o
 
 ydata.pb.i: ydata.pb.cc.i
@@ -239,7 +239,7 @@ ydata.pb.i: ydata.pb.cc.i
 
 # target to preprocess a source file
 ydata.pb.cc.i:
-	cd /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/cmake-build-debug && $(MAKE) $(MAKESILENT) -f proto/CMakeFiles/proto.dir/build.make proto/CMakeFiles/proto.dir/ydata.pb.cc.i
+	cd /Users/daniel/Desktop/stAR-sampler/cmake-build-debug && $(MAKE) $(MAKESILENT) -f proto/CMakeFiles/proto.dir/build.make proto/CMakeFiles/proto.dir/ydata.pb.cc.i
 .PHONY : ydata.pb.cc.i
 
 ydata.pb.s: ydata.pb.cc.s
@@ -247,7 +247,7 @@ ydata.pb.s: ydata.pb.cc.s
 
 # target to generate assembly for a file
 ydata.pb.cc.s:
-	cd /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/cmake-build-debug && $(MAKE) $(MAKESILENT) -f proto/CMakeFiles/proto.dir/build.make proto/CMakeFiles/proto.dir/ydata.pb.cc.s
+	cd /Users/daniel/Desktop/stAR-sampler/cmake-build-debug && $(MAKE) $(MAKESILENT) -f proto/CMakeFiles/proto.dir/build.make proto/CMakeFiles/proto.dir/ydata.pb.cc.s
 .PHONY : ydata.pb.cc.s
 
 # Help Target
@@ -285,6 +285,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/daniel/Desktop/stAR-sampler/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

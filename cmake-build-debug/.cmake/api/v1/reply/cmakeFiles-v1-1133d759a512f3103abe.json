@@ -308,8 +308,8 @@
 	"kind" : "cmakeFiles",
 	"paths" : 
 	{
-		"build" : "/Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/cmake-build-debug",
-		"source" : "/Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import"
+		"build" : "/Users/daniel/Desktop/stAR-sampler/cmake-build-debug",
+		"source" : "/Users/daniel/Desktop/stAR-sampler"
 	},
 	"version" : 
 	{

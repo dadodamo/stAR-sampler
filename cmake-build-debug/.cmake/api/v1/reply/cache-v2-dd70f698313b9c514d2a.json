@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/cmake-build-debug"
+			"value" : "/Users/daniel/Desktop/stAR-sampler/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -175,7 +175,7 @@
 				}
 			],
 			"type" : "STRING",
-			"value" : "-O2"
+			"value" : "-O3"
 		},
 		{
 			"name" : "CMAKE_CXX_FLAGS_DEBUG",
@@ -495,7 +495,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/cmake-build-debug/CMakeFiles/pkgRedirects"
+			"value" : "/Users/daniel/Desktop/stAR-sampler/cmake-build-debug/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -567,7 +567,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import"
+			"value" : "/Users/daniel/Desktop/stAR-sampler"
 		},
 		{
 			"name" : "CMAKE_INSTALL_NAME_TOOL",
@@ -1299,7 +1299,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/cmake-build-debug"
+			"value" : "/Users/daniel/Desktop/stAR-sampler/cmake-build-debug"
 		},
 		{
 			"name" : "ar_gibbs_IS_TOP_LEVEL",
@@ -1323,7 +1323,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import"
+			"value" : "/Users/daniel/Desktop/stAR-sampler"
 		}
 	],
 	"kind" : "cache",

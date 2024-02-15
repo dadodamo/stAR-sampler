@@ -1,6 +1,6 @@
 proto/CMakeFiles/proto.dir/xdata.pb.cc.o: \
-  /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/cmake-build-debug/proto/xdata.pb.cc \
-  /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/cmake-build-debug/proto/xdata.pb.h \
+  /Users/daniel/Desktop/stAR-sampler/cmake-build-debug/proto/xdata.pb.cc \
+  /Users/daniel/Desktop/stAR-sampler/cmake-build-debug/proto/xdata.pb.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/limits \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__assert \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__config \

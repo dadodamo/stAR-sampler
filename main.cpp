@@ -33,12 +33,11 @@ int main(int argc,char* argv[]) {
     ///////// DATA PARSING ///////////
 
 
-    std::ifstream input("/users/daniel/desktop/argibbs/data_import/ar_model_gibbs-data_import/dataparsed.bin", std::ios::binary);
+    std::ifstream input("/users/daniel/desktop/stAR-sampler/dataparsed.bin", std::ios::binary);
     if (!input) {
         std::cerr << "Failed to open data.bin" << std::endl;
         return 1;
     }
-
     std::stringstream buffer;
     buffer << input.rdbuf();
     std::string serialized_data = buffer.str();
@@ -112,6 +111,14 @@ int main(int argc,char* argv[]) {
     a.init();
     a.standardize();
     unsigned int n_iter = 5000;
+    unsigned int burn_in = 1000;
+    for(int i = 0; i <burn_in; ++i) {
+        a.sample();
+        if(i % 100 == 0) {
+            std::cout<< "BURN-IN: Iteration " << i << " finished" << std::endl;
+       }
+
+    }
     for (int i = 0; i < n_iter; ++i) {
         a.sample();
         a.write_curr_state();

@@ -7,11 +7,11 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 # The top level Makefile was generated from the following files:
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
-  "/Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/CMakeLists.txt"
+  "/Users/daniel/Desktop/stAR-sampler/CMakeLists.txt"
   "CMakeFiles/3.27.4/CMakeCCompiler.cmake"
   "CMakeFiles/3.27.4/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.27.4/CMakeSystem.cmake"
-  "/Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/proto/CMakeLists.txt"
+  "/Users/daniel/Desktop/stAR-sampler/proto/CMakeLists.txt"
   "/usr/local/share/cmake-3.27/Modules/CMakeCInformation.cmake"
   "/usr/local/share/cmake-3.27/Modules/CMakeCXXInformation.cmake"
   "/usr/local/share/cmake-3.27/Modules/CMakeCommonLanguageInclude.cmake"

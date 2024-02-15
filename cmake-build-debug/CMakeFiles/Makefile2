@@ -54,10 +54,10 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import
+CMAKE_SOURCE_DIR = /Users/daniel/Desktop/stAR-sampler
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/daniel/Desktop/stAR-sampler/cmake-build-debug
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -98,14 +98,14 @@ proto/clean: proto/CMakeFiles/proto.dir/clean
 CMakeFiles/ar_gibbs.dir/all: proto/CMakeFiles/proto.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ar_gibbs.dir/build.make CMakeFiles/ar_gibbs.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ar_gibbs.dir/build.make CMakeFiles/ar_gibbs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target ar_gibbs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/daniel/Desktop/stAR-sampler/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target ar_gibbs"
 .PHONY : CMakeFiles/ar_gibbs.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/ar_gibbs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/cmake-build-debug/CMakeFiles 16
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/daniel/Desktop/stAR-sampler/cmake-build-debug/CMakeFiles 16
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ar_gibbs.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/daniel/Desktop/stAR-sampler/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/ar_gibbs.dir/rule
 
 # Convenience name for target.
@@ -124,14 +124,14 @@ CMakeFiles/ar_gibbs.dir/clean:
 proto/CMakeFiles/proto.dir/all:
 	$(MAKE) $(MAKESILENT) -f proto/CMakeFiles/proto.dir/build.make proto/CMakeFiles/proto.dir/depend
 	$(MAKE) $(MAKESILENT) -f proto/CMakeFiles/proto.dir/build.make proto/CMakeFiles/proto.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/cmake-build-debug/CMakeFiles --progress-num=7,8,9,10,11,12,13,14,15,16 "Built target proto"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/daniel/Desktop/stAR-sampler/cmake-build-debug/CMakeFiles --progress-num=7,8,9,10,11,12,13,14,15,16 "Built target proto"
 .PHONY : proto/CMakeFiles/proto.dir/all
 
 # Build rule for subdir invocation for target.
 proto/CMakeFiles/proto.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/cmake-build-debug/CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/daniel/Desktop/stAR-sampler/cmake-build-debug/CMakeFiles 10
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 proto/CMakeFiles/proto.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/daniel/Desktop/stAR-sampler/cmake-build-debug/CMakeFiles 0
 .PHONY : proto/CMakeFiles/proto.dir/rule
 
 # Convenience name for target.

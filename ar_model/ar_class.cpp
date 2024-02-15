@@ -25,7 +25,7 @@ void ar_model::init() {
     sig_0_sampler = std::gamma_distribution<double> (ab_0_prior.first, ab_0_prior.second);
     phi_sampler = std::normal_distribution<double>(0,sqrt(phi_cand_var));
 
-    phi = 1.;
+    phi = .32;
     beta = beta_sampler.samples(1);
     rho = rho_sampler(generator);
     mu_0 = mu0_sampler.samples(1);
@@ -67,7 +67,6 @@ void ar_model::serialize() {
     proto::serialize(sample_stream);
 
     std::vector<double> fit_y_vec(fitted_y_values.begin(), fitted_y_values.end());
-    std::cout << fit_y_vec.size() << std::endl;
     for (int t = 0; t < y.size(); ++t) {
         std::vector<double> y_vec(y[t].begin(), y[t].end());
         y_stream.add_vec_y()->mutable_vec_value()->Add(y_vec.begin(), y_vec.end());
@@ -100,10 +99,12 @@ void ar_model::write_curr_state(){
     sample_stream.add_mu_0()->mutable_vec_value()->Add(mu0_vec.begin(), mu0_vec.end());
     sample_stream.add_beta()->mutable_vec_value()->Add(beta_vec.begin(), beta_vec.end());
 //    sample_stream.add_pmcc_y()->mutable_vec_value()->Add.(sampled_y.begin(), sampled_y.end());
+    iter_count++;
 
 }
 
 void ar_model::sample() {
+    inclburn_iter_count++;
 
     // sample y's that are NA
     Eigen::VectorXd o_conc = Eigen::VectorXd::Zero(N*T);
@@ -185,7 +186,15 @@ void ar_model::sample() {
 
     //phi MH step
     {
-        phi_sampler.param(std::normal_distribution<double>::param_type(phi, sqrt(phi_cand_var)));
+        if(inclburn_iter_count % 20 == 0){
+            batch_count_50++;
+            if(phi_accept_count/inclburn_iter_count < 0.44){
+                phi_s -= (0.1 < sqrt(1./batch_count_50)) ? 0.1 : sqrt(1./batch_count_50);
+            } else {
+                phi_s += (0.1 < sqrt(1./batch_count_50)) ? 0.1 : sqrt(1./batch_count_50);
+            }
+        }
+        phi_sampler.param(std::normal_distribution<double>::param_type(phi, exp(phi_s)));
         double phi_cand = phi_sampler(generator);
         double u = unif(generator);
         if (phi_cand > 0) {
@@ -196,14 +205,14 @@ void ar_model::sample() {
                 phi = phi_cand;
                 matern_cov = calc_matern_mat(coord_mat, phi, nu);
                 matern_inv = matern_cov.inverse();
-                phi_accept_rate++;
+                phi_accept_count++;
             }
         }
     }
     //covariance update
 
     w_full_cov_inv =  matern_inv/sigma_w;
-    iter_count++;
+
 }
 
 void ar_model::track_pmcc(){

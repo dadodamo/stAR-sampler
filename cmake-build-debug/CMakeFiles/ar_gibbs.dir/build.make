@@ -53,10 +53,10 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import
+CMAKE_SOURCE_DIR = /Users/daniel/Desktop/stAR-sampler
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/daniel/Desktop/stAR-sampler/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/ar_gibbs.dir/depend.make
@@ -70,74 +70,74 @@ include CMakeFiles/ar_gibbs.dir/progress.make
 include CMakeFiles/ar_gibbs.dir/flags.make
 
 CMakeFiles/ar_gibbs.dir/main.cpp.o: CMakeFiles/ar_gibbs.dir/flags.make
-CMakeFiles/ar_gibbs.dir/main.cpp.o: /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/main.cpp
+CMakeFiles/ar_gibbs.dir/main.cpp.o: /Users/daniel/Desktop/stAR-sampler/main.cpp
 CMakeFiles/ar_gibbs.dir/main.cpp.o: CMakeFiles/ar_gibbs.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ar_gibbs.dir/main.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ar_gibbs.dir/main.cpp.o -MF CMakeFiles/ar_gibbs.dir/main.cpp.o.d -o CMakeFiles/ar_gibbs.dir/main.cpp.o -c /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/daniel/Desktop/stAR-sampler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ar_gibbs.dir/main.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ar_gibbs.dir/main.cpp.o -MF CMakeFiles/ar_gibbs.dir/main.cpp.o.d -o CMakeFiles/ar_gibbs.dir/main.cpp.o -c /Users/daniel/Desktop/stAR-sampler/main.cpp
 
 CMakeFiles/ar_gibbs.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ar_gibbs.dir/main.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/main.cpp > CMakeFiles/ar_gibbs.dir/main.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/daniel/Desktop/stAR-sampler/main.cpp > CMakeFiles/ar_gibbs.dir/main.cpp.i
 
 CMakeFiles/ar_gibbs.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ar_gibbs.dir/main.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/main.cpp -o CMakeFiles/ar_gibbs.dir/main.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/daniel/Desktop/stAR-sampler/main.cpp -o CMakeFiles/ar_gibbs.dir/main.cpp.s
 
 CMakeFiles/ar_gibbs.dir/coordinates/coordinates.cpp.o: CMakeFiles/ar_gibbs.dir/flags.make
-CMakeFiles/ar_gibbs.dir/coordinates/coordinates.cpp.o: /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/coordinates/coordinates.cpp
+CMakeFiles/ar_gibbs.dir/coordinates/coordinates.cpp.o: /Users/daniel/Desktop/stAR-sampler/coordinates/coordinates.cpp
 CMakeFiles/ar_gibbs.dir/coordinates/coordinates.cpp.o: CMakeFiles/ar_gibbs.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ar_gibbs.dir/coordinates/coordinates.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ar_gibbs.dir/coordinates/coordinates.cpp.o -MF CMakeFiles/ar_gibbs.dir/coordinates/coordinates.cpp.o.d -o CMakeFiles/ar_gibbs.dir/coordinates/coordinates.cpp.o -c /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/coordinates/coordinates.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/daniel/Desktop/stAR-sampler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ar_gibbs.dir/coordinates/coordinates.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ar_gibbs.dir/coordinates/coordinates.cpp.o -MF CMakeFiles/ar_gibbs.dir/coordinates/coordinates.cpp.o.d -o CMakeFiles/ar_gibbs.dir/coordinates/coordinates.cpp.o -c /Users/daniel/Desktop/stAR-sampler/coordinates/coordinates.cpp
 
 CMakeFiles/ar_gibbs.dir/coordinates/coordinates.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ar_gibbs.dir/coordinates/coordinates.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/coordinates/coordinates.cpp > CMakeFiles/ar_gibbs.dir/coordinates/coordinates.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/daniel/Desktop/stAR-sampler/coordinates/coordinates.cpp > CMakeFiles/ar_gibbs.dir/coordinates/coordinates.cpp.i
 
 CMakeFiles/ar_gibbs.dir/coordinates/coordinates.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ar_gibbs.dir/coordinates/coordinates.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/coordinates/coordinates.cpp -o CMakeFiles/ar_gibbs.dir/coordinates/coordinates.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/daniel/Desktop/stAR-sampler/coordinates/coordinates.cpp -o CMakeFiles/ar_gibbs.dir/coordinates/coordinates.cpp.s
 
 CMakeFiles/ar_gibbs.dir/calc_posterior/posterior.cpp.o: CMakeFiles/ar_gibbs.dir/flags.make
-CMakeFiles/ar_gibbs.dir/calc_posterior/posterior.cpp.o: /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/calc_posterior/posterior.cpp
+CMakeFiles/ar_gibbs.dir/calc_posterior/posterior.cpp.o: /Users/daniel/Desktop/stAR-sampler/calc_posterior/posterior.cpp
 CMakeFiles/ar_gibbs.dir/calc_posterior/posterior.cpp.o: CMakeFiles/ar_gibbs.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/ar_gibbs.dir/calc_posterior/posterior.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ar_gibbs.dir/calc_posterior/posterior.cpp.o -MF CMakeFiles/ar_gibbs.dir/calc_posterior/posterior.cpp.o.d -o CMakeFiles/ar_gibbs.dir/calc_posterior/posterior.cpp.o -c /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/calc_posterior/posterior.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/daniel/Desktop/stAR-sampler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/ar_gibbs.dir/calc_posterior/posterior.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ar_gibbs.dir/calc_posterior/posterior.cpp.o -MF CMakeFiles/ar_gibbs.dir/calc_posterior/posterior.cpp.o.d -o CMakeFiles/ar_gibbs.dir/calc_posterior/posterior.cpp.o -c /Users/daniel/Desktop/stAR-sampler/calc_posterior/posterior.cpp
 
 CMakeFiles/ar_gibbs.dir/calc_posterior/posterior.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ar_gibbs.dir/calc_posterior/posterior.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/calc_posterior/posterior.cpp > CMakeFiles/ar_gibbs.dir/calc_posterior/posterior.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/daniel/Desktop/stAR-sampler/calc_posterior/posterior.cpp > CMakeFiles/ar_gibbs.dir/calc_posterior/posterior.cpp.i
 
 CMakeFiles/ar_gibbs.dir/calc_posterior/posterior.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ar_gibbs.dir/calc_posterior/posterior.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/calc_posterior/posterior.cpp -o CMakeFiles/ar_gibbs.dir/calc_posterior/posterior.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/daniel/Desktop/stAR-sampler/calc_posterior/posterior.cpp -o CMakeFiles/ar_gibbs.dir/calc_posterior/posterior.cpp.s
 
 CMakeFiles/ar_gibbs.dir/ar_model/ar_class.cpp.o: CMakeFiles/ar_gibbs.dir/flags.make
-CMakeFiles/ar_gibbs.dir/ar_model/ar_class.cpp.o: /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/ar_model/ar_class.cpp
+CMakeFiles/ar_gibbs.dir/ar_model/ar_class.cpp.o: /Users/daniel/Desktop/stAR-sampler/ar_model/ar_class.cpp
 CMakeFiles/ar_gibbs.dir/ar_model/ar_class.cpp.o: CMakeFiles/ar_gibbs.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/ar_gibbs.dir/ar_model/ar_class.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ar_gibbs.dir/ar_model/ar_class.cpp.o -MF CMakeFiles/ar_gibbs.dir/ar_model/ar_class.cpp.o.d -o CMakeFiles/ar_gibbs.dir/ar_model/ar_class.cpp.o -c /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/ar_model/ar_class.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/daniel/Desktop/stAR-sampler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/ar_gibbs.dir/ar_model/ar_class.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ar_gibbs.dir/ar_model/ar_class.cpp.o -MF CMakeFiles/ar_gibbs.dir/ar_model/ar_class.cpp.o.d -o CMakeFiles/ar_gibbs.dir/ar_model/ar_class.cpp.o -c /Users/daniel/Desktop/stAR-sampler/ar_model/ar_class.cpp
 
 CMakeFiles/ar_gibbs.dir/ar_model/ar_class.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ar_gibbs.dir/ar_model/ar_class.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/ar_model/ar_class.cpp > CMakeFiles/ar_gibbs.dir/ar_model/ar_class.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/daniel/Desktop/stAR-sampler/ar_model/ar_class.cpp > CMakeFiles/ar_gibbs.dir/ar_model/ar_class.cpp.i
 
 CMakeFiles/ar_gibbs.dir/ar_model/ar_class.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ar_gibbs.dir/ar_model/ar_class.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/ar_model/ar_class.cpp -o CMakeFiles/ar_gibbs.dir/ar_model/ar_class.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/daniel/Desktop/stAR-sampler/ar_model/ar_class.cpp -o CMakeFiles/ar_gibbs.dir/ar_model/ar_class.cpp.s
 
 CMakeFiles/ar_gibbs.dir/protocpp/serialize.cpp.o: CMakeFiles/ar_gibbs.dir/flags.make
-CMakeFiles/ar_gibbs.dir/protocpp/serialize.cpp.o: /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/protocpp/serialize.cpp
+CMakeFiles/ar_gibbs.dir/protocpp/serialize.cpp.o: /Users/daniel/Desktop/stAR-sampler/protocpp/serialize.cpp
 CMakeFiles/ar_gibbs.dir/protocpp/serialize.cpp.o: CMakeFiles/ar_gibbs.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/ar_gibbs.dir/protocpp/serialize.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ar_gibbs.dir/protocpp/serialize.cpp.o -MF CMakeFiles/ar_gibbs.dir/protocpp/serialize.cpp.o.d -o CMakeFiles/ar_gibbs.dir/protocpp/serialize.cpp.o -c /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/protocpp/serialize.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/daniel/Desktop/stAR-sampler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/ar_gibbs.dir/protocpp/serialize.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ar_gibbs.dir/protocpp/serialize.cpp.o -MF CMakeFiles/ar_gibbs.dir/protocpp/serialize.cpp.o.d -o CMakeFiles/ar_gibbs.dir/protocpp/serialize.cpp.o -c /Users/daniel/Desktop/stAR-sampler/protocpp/serialize.cpp
 
 CMakeFiles/ar_gibbs.dir/protocpp/serialize.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ar_gibbs.dir/protocpp/serialize.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/protocpp/serialize.cpp > CMakeFiles/ar_gibbs.dir/protocpp/serialize.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/daniel/Desktop/stAR-sampler/protocpp/serialize.cpp > CMakeFiles/ar_gibbs.dir/protocpp/serialize.cpp.i
 
 CMakeFiles/ar_gibbs.dir/protocpp/serialize.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ar_gibbs.dir/protocpp/serialize.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/protocpp/serialize.cpp -o CMakeFiles/ar_gibbs.dir/protocpp/serialize.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/daniel/Desktop/stAR-sampler/protocpp/serialize.cpp -o CMakeFiles/ar_gibbs.dir/protocpp/serialize.cpp.s
 
 # Object files for target ar_gibbs
 ar_gibbs_OBJECTS = \
@@ -159,7 +159,7 @@ ar_gibbs: CMakeFiles/ar_gibbs.dir/build.make
 ar_gibbs: proto/libproto.a
 ar_gibbs: /usr/local/lib/libprotobuf.a
 ar_gibbs: CMakeFiles/ar_gibbs.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable ar_gibbs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/daniel/Desktop/stAR-sampler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable ar_gibbs"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ar_gibbs.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -171,6 +171,6 @@ CMakeFiles/ar_gibbs.dir/clean:
 .PHONY : CMakeFiles/ar_gibbs.dir/clean
 
 CMakeFiles/ar_gibbs.dir/depend:
-	cd /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/cmake-build-debug /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/cmake-build-debug /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/cmake-build-debug/CMakeFiles/ar_gibbs.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /Users/daniel/Desktop/stAR-sampler/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/daniel/Desktop/stAR-sampler /Users/daniel/Desktop/stAR-sampler /Users/daniel/Desktop/stAR-sampler/cmake-build-debug /Users/daniel/Desktop/stAR-sampler/cmake-build-debug /Users/daniel/Desktop/stAR-sampler/cmake-build-debug/CMakeFiles/ar_gibbs.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/ar_gibbs.dir/depend
 

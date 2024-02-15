@@ -1,4 +1,4 @@
-# Install script for directory: /Users/daniel/Desktop/argibbs/data_import/ar_model_gibbs-data_import/proto
+# Install script for directory: /Users/daniel/Desktop/stAR-sampler/proto
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
