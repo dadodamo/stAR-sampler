@@ -6,7 +6,7 @@ setwd("/users/daniel/desktop/stAR-sampler")
 x = seq(0,100,0.01);
 dev.off()
 
-plot(x, dgamma(x,2,rate = 1), type = 'l', c(0,10))
+plot(x, dgamma(x,2,rate = 0.5), type = 'l', c(0,10))
 
 ##### new proto files ##### 
 
@@ -54,7 +54,7 @@ for (i in 1:5) {
   plot(beta[i, 1000:5000], type = 'l', main = "", col = 'grey', ylab = bquote(beta[.(i)]))
   mean(beta[i,])
   # Add the true beta line
-  #lines(1:4000, rep(beta_true[i], 4000), col = "green", type = 'l', lwd = 2)  
+  lines(1:4000, rep(beta_true[i], 4000), col = "green", type = 'l', lwd = 2)  
 }
 
 dev.off()

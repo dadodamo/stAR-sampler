@@ -5409,7 +5409,6 @@ CMakeFiles/ar_gibbs.dir/main.cpp.o: /Users/daniel/Desktop/stAR-sampler/main.cpp 
   /Users/daniel/Desktop/stAR-sampler/calc_posterior/posterior.h \
   /Users/daniel/Desktop/stAR-sampler/coordinates/coordinates.h \
   /Users/daniel/Desktop/stAR-sampler/matern.h \
-  proto/parsedata.pb.h \
   /Users/daniel/Desktop/stAR-sampler/coordinates/coordinates.h \
   /Users/daniel/Desktop/stAR-sampler/debug_functions/debug.h \
   /Users/daniel/Desktop/stAR-sampler/matern.h \
@@ -9080,8 +9079,6 @@ proto/paramdata.pb.h:
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__memory/auto_ptr.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__string/char_traits.h:
-
-proto/parsedata.pb.h:
 
 /users/daniel/Desktop/libraries/boost/boost/mpl/aux_/na_fwd.hpp:
 
