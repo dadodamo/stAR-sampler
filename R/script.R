@@ -43,8 +43,20 @@ beta_true <- c(
   -0.415183,
   -1.27539,
   -0.032302
+  
 )
-
+n_iter= 5000;
+alpha <- 0.05;
+beta_low_bound <- c();
+beta_high_bound <- c();
+beta_means <- c();
+for(i in 1:5){
+beta_low_bound <- c(beta_low_bound, sort(beta[i,])[n_iter*alpha/2]) 
+beta_means <- c(beta_means, mean(beta[i,]))
+beta_high_bound <- c(beta_high_bound, sort(beta[i,])[n_iter*(1-alpha/2)])
+}
+beta_conf_int <- data.frame(beta_low_bound, beta_means, beta_high_bound)
+beta_conf_int
 ## beta only sample  
 dev.off()
 par(mfrow = c(5, 1))
@@ -56,7 +68,10 @@ for (i in 1:5) {
   # Add the true beta line
   #lines(1:4000, rep(beta_true[i], 4000), col = "green", type = 'l', lwd = 2)  
 }
-
+hist(beta[1,], breaks = 500)
+abline( v = beta_low_bound[1], col = "blue", lty = 2)
+abline( v= beta_high_bound[1], col = "blue", lty = 2)
+abline( v = beta_true[1], col = 'red', lty = 2)
 dev.off()
 
 
@@ -69,7 +84,7 @@ dev.off()
 plot(rho[1000:5000], type = 'l', col = 'grey', ylim = c(0.45, 0.55), ylab = "", main = expression(rho), xlab = "Iteration")
 lines(1:4000, rep(0.5, 4000), type = 'l', col = 'green', lwd = 2)
 plot(rho, type = 'l')
-
+sort(rho)[n_iter*alpha/2]
 
 #mu_0
 
@@ -95,7 +110,16 @@ for (i in 1:10) {
   plot(mu0[i,1000:5000], ylab = bquote(paste(mu[0], "[", .(i), "]")) ,  type = 'l', col = 'grey');
   lines(1:4000, rep(mu_0_true[i], 4000), type = 'l',col = 'green', lwd = 2);
 }
-
+mu_low_bound <- c();
+mu_high_bound <- c();
+means_mu <- c();
+for(i in 1:10){
+  mu_low_bound <- c(mu_low_bound, sort(mu0[i,])[n_iter*alpha/2])
+  means_mu <- c(means_mu, mean(mu0[i,]));
+  mu_high_bound <- c(mu_high_bound, sort(mu0[i,])[n_iter*(1-alpha/2)])
+}
+mu_conf_int <- data.frame(mu_low_bound, means_mu, mu_high_bound)
+mu_conf_int
 
 ##### plot of variance components
 
@@ -104,7 +128,7 @@ dev.off()
 plot(sig_eps[1000:5000], type = 'l', col = 'grey', main =  bquote(sigma[epsilon]^2), ylab = "", xlab = "Iteration")
 lines(1:4000, rep(0.9, 4000), type = 'l', col = "green", lwd = 2)
 mean(sig_eps)
-
+hist(sig_eps, steps = 500)
 
 ## sig_w
 dev.off()
@@ -124,8 +148,11 @@ plot(sig_0, type = 'l')
 dev.off()
 plot(phi, type = 'l', col = 'grey')
 mean(phi)
-
-
+phi_low_bound <- sort(phi)[n_iter*alpha/2];
+phi_high_bound <- sort(phi)[n_iter*(1-alpha/2)]
+hist(phi, breaks = 500)
+abline(v = phi_low_bound, col = 'blue', lty = 2)
+abline(v = phi_high_bound, col = 'blue', lty = 2)
 #### o's
 o0 <- matrix(0, ncol = 5000, nrow = 10);
 col = 1;

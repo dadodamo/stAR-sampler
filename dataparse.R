@@ -3,15 +3,17 @@ library( "RProtoBuf")
 setwd("/users/daniel/desktop")
 data <- read.csv("pm10_dataset.csv")
 
-setwd("/users/daniel/desktop/ar_gibbs")
+setwd("/users/daniel/desktop/stAR-sampler")
 
 colnames(data)
 ## covariate names for later + selection
 covariates <- c("WE_temp_2m", "WE_tot_precipitation", "WE_surface_pressure", "WE_wind_speed_100m_mean", "WE_blh_layer_max")
-response <- "AQ_pm10"
-y_proto <- RProtoBuf::readProtoFiles(files = "/users/daniel/desktop/ar_gibbs/proto/parsedata.proto")
+re"AQ_pm10"
+y_proto <- RProtoBuf::readProtoFiles(files = "/users/daniel/desktop/stAR-sampler/proto/parsedata.proto")
 
-#factor ID 
+oneloc <- data[data$IDStations == '1264',]
+plot(scale(oneloc[,'WE_blh_layer_max']))
+  #factor ID 
 data$IDStations <- as.factor(data$IDStations)
 data$NomeStazione <- as.factor(data$NomeStazione)
 
@@ -61,7 +63,7 @@ close( con )
 msgbin <- readBin(tf2, "raw", file.info(tf2)$size)
 msg <- read(parsedata.input_data, msgbin)
 
-target_file_path <- "/users/daniel/Desktop/ar_gibbs/dataparsed.bin"
+target_file_path <- "/users/daniel/Desktop/stAR-sampler/dataparsed.bin"
 file.copy(tf2, target_file_path)
 
 
