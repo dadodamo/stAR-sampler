@@ -24,7 +24,7 @@ int main(int argc,char* argv[]) {
     // data generation of model using T = 299, N = 10, p = 5
     // can be rewritten with generic param, as class+methods or function
 
-    const unsigned int T = 199;
+    const unsigned int T = 299;
     const unsigned int p = 5;
     const unsigned int N = 10;
 
@@ -49,9 +49,9 @@ int main(int argc,char* argv[]) {
 //    }
 
     // model variance components
-    double sigma_eps = 0.01;
-    double sigma_w = 0.5;
-    double sigma_0 = .1;
+    double sigma_eps = 0.1;
+    double sigma_w = 0.9;
+    double sigma_0 = 1;
 
     //priors, to pass if needed
 //    double sigma_mu_0_prior = 1;

@@ -51,11 +51,23 @@ par(mfrow = c(5, 1))
 par(mar = c(2, 4, 2, 1))
 for (i in 1:5) {
   # Create the plot
-  plot(beta[i, 1000:5000], type = 'l', main = "", col = 'grey', ylab = bquote(beta[.(i)]))
+  plot(beta[i,], type = 'l', main = "", col = 'grey', ylab = bquote(beta[.(i)]))
   mean(beta[i,])
   # Add the true beta line
-  lines(1:4000, rep(beta_true[i], 4000), col = "green", type = 'l', lwd = 2)  
+  lines(1:5000, rep(beta_true[i], 5000), col = "black", type = 'l', lwd = 2)  
 }
+n_iter= 5000;
+alpha <- 0.05;
+beta_low_bound <- c();
+beta_high_bound <- c();
+beta_means <- c();
+for(i in 1:5){
+beta_low_bound <- c(beta_low_bound, sort(beta[i,])[n_iter*alpha/2]) 
+beta_means <- c(beta_means, mean(beta[i,]))
+beta_high_bound <- c(beta_high_bound, sort(beta[i,])[n_iter*(1-alpha/2)])
+}
+beta_conf_int <- data.frame(beta_low_bound, beta_means, beta_high_bound)
+beta_conf_int
 
 dev.off()
 
@@ -66,11 +78,14 @@ dev.off()
 
 ## read rho file
 dev.off()
-plot(rho[1000:5000], type = 'l', col = 'grey', ylim = c(0.45, 0.55), ylab = "", main = expression(rho), xlab = "Iteration")
-lines(1:4000, rep(0.5, 4000), type = 'l', col = 'green', lwd = 2)
+plot(rho, type = 'l', col = 'grey', ylab = "", main = expression(rho), xlab = "Iteration")
+lines(1:5000, rep(0.5, 5000), type = 'l', col = 'black', lwd = 2)
 plot(rho, type = 'l')
-
-
+rho_low_bound <- sort(rho)[n_iter*alpha/2]
+rho_low_bound
+rho_high_bound <- sort(rho)[n_iter*(1- alpha/2)]
+rho_high_bound 
+mean(rho)
 #mu_0
 
 
@@ -92,24 +107,36 @@ dev.off()
 par(mfrow = c(5, 2))
 par(mar = c(2, 4, 2, 1))
 for (i in 1:10) {
-  plot(mu0[i,1000:5000], ylab = bquote(paste(mu[0], "[", .(i), "]")) ,  type = 'l', col = 'grey');
-  lines(1:4000, rep(mu_0_true[i], 4000), type = 'l',col = 'green', lwd = 2);
+  plot(mu0[i,], ylab = bquote(paste(mu[0], "[", .(i), "]")) ,  type = 'l', col = 'grey');
+  lines(1:5000, rep(mu_0_true[i], 5000), type = 'l',col = 'black', lwd = 2);
 }
+
+mu_low_bound <- c();
+mu_high_bound <- c();
+mu_means <- c();
+
+for(i in 1:5){
+  mu_low_bound <- c(mu_low_bound, sort(mu0[i,])[n_iter*alpha/2]) 
+  mu_means <- c(mu_means, mean(mu0[i,]))
+  mu_high_bound <- c(mu_high_bound, sort(mu0[i,])[n_iter*(1-alpha/2)])
+}
+mu_conf_int <- data.frame(mu_low_bound, mu_means, mu_high_bound)
+mu_conf_int
 
 
 ##### plot of variance components
 
 ## sig_eps
 dev.off()
-plot(sig_eps[1000:5000], type = 'l', col = 'grey', main =  bquote(sigma[epsilon]^2), ylab = "", xlab = "Iteration")
-lines(1:4000, rep(0.9, 4000), type = 'l', col = "green", lwd = 2)
+plot(sig_eps, type = 'l', col = 'grey', main =  bquote(sigma[epsilon]^2), ylab = "", xlab = "Iteration")
+lines(1:5000, rep(0.1, 5000), type = 'l', col = "black", lwd = 2)
 mean(sig_eps)
 
 
 ## sig_w
 dev.off()
-plot(sig_w[1000:5000], type = 'l',main =  bquote(sigma[w]^2), col ='grey', ylim = c(0, 1) ,xlab = "Iteration" , ylab = "")
-lines(1:4000, rep(0.1, 4000), type = 'l', col = "green")
+plot(sig_w, type = 'l',main =  bquote(sigma[w]^2), col ='grey', ylim = c(0, 1) ,xlab = "Iteration" , ylab = "")
+lines(1:5000, rep(0.9, 5000), type = 'l', col = "black", lwd =2 )
 plot(sig_w, type = 'l')
 mean(sig_w)
 
@@ -124,8 +151,10 @@ plot(sig_0, type = 'l')
 dev.off()
 plot(phi, type = 'l', col = 'grey')
 mean(phi)
-
-
+lower_bound_phi <- sort(phi)[n_iter*alpha/2]
+lower_bound_phi
+higher_bound_phi <- sort(phi)[n_iter*(1-alpha/2)]
+higher_bound_phi
 #### o's
 o0 <- matrix(0, ncol = 5000, nrow = 10);
 col = 1;
