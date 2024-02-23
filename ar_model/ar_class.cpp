@@ -186,13 +186,17 @@ void ar_model::sample() {
 
     //phi MH step
     {
+
         if(inclburn_iter_count % 20 == 0){
             batch_count_50++;
-            if(phi_accept_count/inclburn_iter_count < 0.44){
+            double accept_rate = phi_accept_batch_count/20.;
+            
+            if(accept_rate < 0.44){
                 phi_s -= (0.1 < sqrt(1./batch_count_50)) ? 0.1 : sqrt(1./batch_count_50);
             } else {
                 phi_s += (0.1 < sqrt(1./batch_count_50)) ? 0.1 : sqrt(1./batch_count_50);
             }
+            phi_accept_batch_count = 0;
         }
         phi_sampler.param(std::normal_distribution<double>::param_type(phi, exp(phi_s)));
         double phi_cand = phi_sampler(generator);
@@ -206,6 +210,7 @@ void ar_model::sample() {
                 matern_cov = calc_matern_mat(coord_mat, phi, nu);
                 matern_inv = matern_cov.inverse();
                 phi_accept_count++;
+                phi_accept_batch_count++;
             }
         }
     }

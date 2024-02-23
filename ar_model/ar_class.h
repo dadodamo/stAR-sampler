@@ -53,7 +53,7 @@ private:
     std::pair<double, double> ab_w_prior = {2,4};
     std::pair<double, double> ab_0_prior = {2,4};
     // phi prior and candidate variance
-    std::pair<double, double> ab_phi_prior = {2,  1};
+    std::pair<double, double> ab_phi_prior = {2,  4};
     double phi_cand_var = 1;
 
     // matrices
@@ -75,6 +75,7 @@ private:
     //iter count
     unsigned int iter_count = 0;
     unsigned int inclburn_iter_count = 0;
+    unsigned int phi_accept_batch_count = 0;
 
     // PMCC variables
     std::normal_distribution<double> pmcc_y_sampler = std::normal_distribution<double>(0,1);

@@ -67,10 +67,7 @@ int main(int argc,char* argv[]) {
             ydata.push_back(vec_value);
 
     }
-    const unsigned int N = loc.size();
-    const unsigned int T = ydata.size()/N;
-    std::cout << N << std::endl;
-    std::cout << T << std::endl;
+
     const unsigned int p = xdata.size();
     std::vector<coord> coord_store_vec;
 
@@ -79,6 +76,10 @@ int main(int argc,char* argv[]) {
         coord_store_vec.push_back(temp);
     }
 
+    const unsigned int N = coord_store_vec.size();
+    const unsigned int T = ydata.size()/N;
+    std::cout << N << std::endl;
+    std::cout << T << std::endl;
     // divide y
     std::vector<Eigen::VectorXd> Y;
     for (auto it = ydata.begin(); it != ydata.end(); it += N) {

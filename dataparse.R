@@ -8,11 +8,11 @@ setwd("/users/daniel/desktop/stAR-sampler")
 colnames(data)
 ## covariate names for later + selection
 covariates <- c("WE_temp_2m", "WE_tot_precipitation", "WE_surface_pressure", "WE_wind_speed_100m_mean", "WE_blh_layer_max")
-re"AQ_pm10"
+response <- "AQ_pm10"
 y_proto <- RProtoBuf::readProtoFiles(files = "/users/daniel/desktop/stAR-sampler/proto/parsedata.proto")
 
 oneloc <- data[data$IDStations == '1264',]
-plot(scale(oneloc[,'WE_blh_layer_max']))
+plot(scale(oneloc[,'WE_blh_layer_max']), type = 'l')
   #factor ID 
 data$IDStations <- as.factor(data$IDStations)
 data$NomeStazione <- as.factor(data$NomeStazione)
@@ -70,5 +70,6 @@ file.copy(tf2, target_file_path)
 binary_data <- readBin(target_file_path, "raw", file.info(target_file_path)$size)
 msg_data <- read(parsedata.input_data, binary_data)
 msg_data$y$vec_value
-
-
+msg_data$loc[[3]]
+list <- as.list(msg_data$loc)
+list <- sapply(list, function(x){x$lat})
