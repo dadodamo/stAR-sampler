@@ -139,10 +139,18 @@ mean(sig_w)
 
 ## sig_0
 dev.off()
-plot(sig_0[1000:5000],col = 'grey' ,type = 'l', main = bquote(sigma[0]^2), xlab = "Iteration", ylab = "")
+plot(sig_0,col = 'grey' ,type = 'l', main = bquote(sigma[0]^2), xlab = "Iteration", ylab = "")
 lines(1:4000, rep(1, 4000), type = 'l', col = "green")
 mean(sig_0)
+median(sig_0)
 plot(sig_0, type = 'l')
+plot(density(sig_0), main = bquote(sigma[0]^2), xlab = "", xlim = c(0,10), ylab = '', bty = "n", lwd = 1)
+polygon(density(sig_0), col = rgb(0, 0, 0, alpha = 0.2))
+abline( v = 1, col = "black", lty = 1, lwd = 2, )
+sig0_low_bound <- sort(sig_0)[n_iter*alpha/2];
+sig0_high_bound <- sort(sig_0)[n_iter*(1-alpha/2)]
+abline(v = sig0_low_bound, col = "blue", lty  = 2, lwd = 2)
+abline( v = sig0_high_bound, col = "blue", lty = 2, lwd = 2)
 
 ### phi
 dev.off()
