@@ -75,6 +75,7 @@ private:
     //iter count
     unsigned int iter_count = 0;
     unsigned int inclburn_iter_count = 0;
+    unsigned int phi_accept_batch_count = 0;
 
     // PMCC variables
     std::normal_distribution<double> pmcc_y_sampler = std::normal_distribution<double>(0,1);
